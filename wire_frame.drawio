@@ -1,0 +1,169 @@
+<mxfile host="65bd71144e">
+    <diagram id="nKQMyj5D2cVVsMJy41xH" name="ページ1">
+        <mxGraphModel dx="1892" dy="1720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="&lt;font style=&quot;font-size: 26px&quot;&gt;a&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="10" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="520" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="520" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="40" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="1169" y="520" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="1169" y="40" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="520" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="40" width="280" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;font style=&quot;font-size: 10px&quot;&gt;© 2022 All Rights Reserved.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="300" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;font style=&quot;font-size: 40px&quot;&gt;00:00&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="45" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;div&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;logo&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=40;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="top" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;font style=&quot;font-size: 7px&quot;&gt;アカウント&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;font style=&quot;font-size: 7px&quot;&gt;ログアウト&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="40" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;div&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;logo&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=40;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="40" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;font style=&quot;font-size: 7px&quot;&gt;ログイン&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;div&gt;&lt;span style=&quot;font-size: 7px&quot;&gt;アカウント&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 7px ; line-height: 1&quot;&gt;&lt;div&gt;&lt;span&gt;登録&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="40" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;div&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;logo&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=40;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="40" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="top" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="940" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;font style=&quot;font-size: 7px&quot;&gt;アカウント&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="980" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;font style=&quot;font-size: 7px&quot;&gt;ログアウト&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="1020" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;" vertex="1" parent="1">
+                    <mxGeometry x="1169" y="40" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;div&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;logo&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=40;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="1169" y="40" width="50" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="top" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="1319" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font style=&quot;font-size: 7px&quot;&gt;アカウント&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="1359" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;font style=&quot;font-size: 7px&quot;&gt;ログアウト&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="1399" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&lt;font style=&quot;font-size: 10px&quot;&gt;© 2022 All Rights Reserved.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="780" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;font style=&quot;font-size: 10px&quot;&gt;© 2022 All Rights Reserved.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="780" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;font style=&quot;font-size: 10px&quot;&gt;© 2022 All Rights Reserved.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="780" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;font style=&quot;font-size: 10px&quot;&gt;© 2022 All Rights Reserved.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="1169" y="780" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&lt;font style=&quot;font-size: 10px&quot;&gt;© 2022 All Rights Reserved.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="1169" y="300" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;font style=&quot;font-size: 10px&quot;&gt;© 2022 All Rights Reserved.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="300" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&lt;font style=&quot;font-size: 10px&quot;&gt;© 2022 All Rights Reserved.&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=26;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="300" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=7;" vertex="1" parent="1">
+                    <mxGeometry x="45" y="200" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="stop" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=7;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="200" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="lap" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=7;" vertex="1" parent="1">
+                    <mxGeometry x="135" y="200" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=7;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="本日のゴール" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=7;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="120" width="60" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="&lt;font style=&quot;font-size: 10px&quot;&gt;会議名&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=7;" vertex="1" parent="1">
+                    <mxGeometry x="45" y="90" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;div&gt;&lt;span style=&quot;font-size: x-small&quot;&gt;logo&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=40;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="140" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="123" width="85" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="150" width="85" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="175" width="85" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="545" y="200" width="85" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="名前" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="107" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="メールアドレス" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="133" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="パスワード" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="160" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="パスワード（確認用）" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="185" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;font style=&quot;font-size: 26px&quot;&gt;アカウント登録画面&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="10" width="250" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
