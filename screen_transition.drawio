@@ -202,6 +202,11 @@
                         <mxPoint x="760" y="410" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="56" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mN-mmOCK-x9OEGZpuf1X-59">
+                    <mxGeometry x="-0.2667" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="mN-mmOCK-x9OEGZpuf1X-60" value="「アーカイブ」&lt;br&gt;クリック" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="240" y="100" width="120" height="60" as="geometry"/>
                 </mxCell>
@@ -259,13 +264,13 @@
                 <mxCell id="53" value="「会議を終了する」&lt;br&gt;クリック" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="-80" y="300" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="54" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="50">
+                <mxCell id="54" value="成功" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="50">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="80" y="430" as="sourcePoint"/>
                         <mxPoint x="130" y="380" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="55" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="53">
+                <mxCell id="55" value="成功" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="53">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="80" y="430" as="sourcePoint"/>
                         <mxPoint x="120" y="270" as="targetPoint"/>

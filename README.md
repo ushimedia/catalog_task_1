@@ -24,4 +24,4 @@ https://docs.google.com/spreadsheets/d/1Ma1j0e8t1anF92hfmRHLDr_Q_EN6Ilu3/edit?us
 ![ER](https://user-images.githubusercontent.com/103015276/168027048-d454323a-a1dc-4cfc-bcf7-af88818423ea.png)
 
 ## 画面遷移図
-![screen_transition](https://user-images.githubusercontent.com/103015276/168027133-6b0adfae-e2df-48a3-bd24-d48d1f17c85a.png)
+![screen_transition](https://user-images.githubusercontent.com/103015276/168028756-0a7e8d98-52d0-41fd-aa9d-e9d8c359f1d5.png)
