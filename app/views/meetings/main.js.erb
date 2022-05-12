@@ -1,0 +1,22 @@
+//タブの切り替え
+$(".tab").on("click", function() {
+    $("#counter").html("00：00：00");
+    count_reset();
+    $("#time").text("0 ％");
+    if ($(".formTab").hasClass("activeTab")) {
+      if($("#mtgTime").val() === "") {
+        alert('時間が入力されていません。半角数字で入力して下さい。');
+        $(".mtgTab").removeClass("activeTab");
+        $(".formTab").addClass("activeTab");
+        $("#mtgTime").focus();
+        return false;
+      }
+    }
+    $(".tab").removeClass("activeTab");
+    $(this).addClass("activeTab");
+  
+    //コンテンツの切り替え
+    $(".activeContent").removeClass("activeContent");
+    let index = $(".tab").index(this);
+    $(".content").eq(index).addClass("activeContent");
+  });

@@ -1,25 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##　開発言語
+### Ruby 3.0.1
+### Rails 6.0.4
 
-Things you may want to cover:
+##　実行手順
+###　$ git clone git@github.com:ushimedia/catalog_task_1.git
+###　$ cd catalog_task_1
+###　$ bundle install
+###　$ rails db:create && rails db:migrate
+###　$ rails s
 
-* Ruby version
+##　カタログ設計
 
-* System dependencies
 
-* Configuration
+##　テーブル定義書
 
-* Database creation
 
-* Database initialization
+##　ワイヤーフレーム
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
