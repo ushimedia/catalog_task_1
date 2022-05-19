@@ -18,12 +18,12 @@
     </div>
 
     <div class="start_meeting">
-    <%= f.label :開催時間 %>
-    <%= f.text_field :start_meeting, autofocus: true, autocomplete: "start_meeting" %>
+    <%= f.label :開始時間 %>
+    <%= f.datetime_field :start_meeting, autofocus: true, autocomplete: "start_meeting" %>
 
     <div class="end_meeting">
     <%= f.label :終了時間 %>
-    <%= f.text_field :end_meeting, autofocus: true, autocomplete: "end_meeting" %>
+    <%= f.datetime_field :end_meeting, autofocus: true, autocomplete: "end_meeting" %>
   </div>
   
     

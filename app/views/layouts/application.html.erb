@@ -19,14 +19,14 @@
      </div>
      <div class="nav">
       <% if user_signed_in? %>
-      <%= link_to "会議を始める", new_meeting_path %>
-      <%= link_to "アーカイブ", meetings_path %>
-      <%= link_to "フィードバック", meetings_path %>
-      <%= link_to "アカウント", user_path(current_user) %>
-      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      <%= link_to "会議を始める", new_meeting_path, class: "btn btn-outline-primary" %>
+      <%= link_to "アーカイブ", meetings_path, class: "btn btn-outline-primary" %>
+      <%= link_to "フィードバック", new_feedback_path, class: "btn btn-outline-primary" %>
+      <%= link_to "アカウント", user_path(current_user), class: "btn btn-outline-primary" %>
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-outline-primary" %>
      <% else %>
-      <%= link_to "新規登録", new_user_registration_path %>
-      <%= link_to "ログイン", new_user_session_path %>
+      <%= link_to "新規登録", new_user_registration_path, class: "btn btn-outline-primary" %>
+      <%= link_to "ログイン", new_user_session_path, class: "btn btn-outline-primary" %>
      <% end %>
      </div>
     </div>
@@ -38,11 +38,11 @@
   
     <%= yield %>
   
-  <footer class="footer">
+<footer class="footer">
   <p>© 2022 All Rights Reserved.</p>
   </footer>
-
-    </body>
+</body>
+    
 </html>
 
 

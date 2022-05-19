@@ -1,76 +1,5 @@
-<h1>Meetings</h1>
-<div id="hoge"></div>
-<div class="container">
-<div class="back-ground-logo"></div>
-    <div id="timer"></div>
+<h1>アーカイブ</h1>
 
-    <form id="form" class="form-inline">
-      <div class="form-group">
-        <label for="duration" class="control-label">会議の残り時間 [秒]</label>
-        <input id="duration" name="duration" type="text" value="10" class="form-control" />
-      </div>
-      <button type="submit" class="btn btn-primary">start</button>
-    </form>
-  </div>
-
-  <script>
-  
-  (function($) {
-    $.fn.timer = function(totalTime) {
-      // reset timer
-      clearTimeout(this.data('id_of_settimeout'));
-      this.empty();
-      
-      // initialize elements
-      this.append('<h4>残り時間は<span></span>秒です。</h4>');
-      this.append('<div class="progress"></div>');
-      this.children('.progress').append('<div class="progress-bar progress-bar-info"></div>');
-      this.find('.progress-bar').css({
-          cssText: '-webkit-transition: none !important; transition: none !important;',
-          width: '100%'
-      });
-  
-      var countdown = (function(timeLeft) {
-        var $progressBar = this.find('div.progress-bar');
-        var $header = this.children('h4');
-  
-        if (timeLeft <= 0) {
-          $header.empty().text('予定時刻を過ぎています!').addClass('text-danger');
-          return;
-        }
-  
-        $header.children('span').text(timeLeft);
-  
-        var width = (timeLeft - 1) * (100/totalTime); // unit in '%'
-        if (width < 20) { // less than 20 %
-          $progressBar.removeClass();
-          $progressBar.addClass('progress-bar progress-bar-danger');
-        } else if (width < 50) { // less than 50 % (and more than 20 %)
-          $progressBar.removeClass();
-          $progressBar.addClass('progress-bar progress-bar-warning');
-        }
-  
-        $progressBar.animate({
-          width:  width + '%'
-        }, 1000, 'linear');
-  
-        var id = setTimeout((function() {
-          countdown(timeLeft - 1);
-        }), 1000);
-        this.data("id_of_settimeout", id);
-      }).bind(this);
-  
-      countdown(totalTime);
-    };
-  })(jQuery);
-  
-  $('#form').submit(function(e) {
-    e.preventDefault();
-  
-    var duration = $("#duration").val();
-    $('#timer').timer(duration);
-  });
-  </script>
 
 
 <table>
@@ -92,9 +21,9 @@
 
 
 
-        <td><%= link_to 'Show', meeting %></td>
-        <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
-        <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+        <td><%= link_to '編集', edit_meeting_path(meeting) %></td>
+        <td><%= link_to '削除', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

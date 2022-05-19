@@ -1,6 +1,49 @@
 <h1>Editing Meeting</h1>
 
-<%= render 'form', meeting: @meeting %>
+<%= form_for(@meeting) do |f| %>
+    
+  
+    <div class="name">
+      <%= f.label :会議名 %>
+      <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+    </div>
 
-<%= link_to 'Show', @meeting %> |
+    <div class="agenda">
+      <%= f.label :アジェンダ %>
+      <%= f.text_field :agenda, autofocus: true, autocomplete: "agenda" %>
+    </div>
+
+    <div class="goal">
+      <%= f.label :話し合いのゴール %>
+      <%= f.text_field :goal, autofocus: true, autocomplete: "goal" %>
+    </div>
+
+    <div class="status">
+    <%= f.label :状況 %>
+    <%= f.radio_button :status, '0' %>
+    <%= f.label :status, '完了', value: 0 %>
+
+     <%= f.radio_button :status, '1' %>
+     <%= f.label :status, '議論中', value: 1 %>
+
+     <%= f.radio_button :status, '2' %>
+     <%= f.label :status, '保留', value: 2 %>
+  </div>
+
+    <div class="start_meeting">
+    <%= f.label :開始時間 %>
+    <%= f.datetime_field :start_meeting, autofocus: true, autocomplete: "start_meeting" %>
+
+    <div class="end_meeting">
+    <%= f.label :終了時間 %>
+    <%= f.datetime_field :end_meeting, autofocus: true, autocomplete: "end_meeting" %>
+  </div>
+  
+    
+  
+
+<%= render 'form', meeting: @meeting %>
+<% end %>
+
+
 <%= link_to 'Back', meetings_path %>
