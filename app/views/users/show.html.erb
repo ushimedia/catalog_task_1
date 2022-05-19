@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<p>名前: <%= @user.name %></p>
+<p>メールアドレス: <%= @user.email %></p><br>
+
+<%= link_to 'Edit', edit_user_registration_path(current_user) %> |
+<%= link_to 'Back', meetings_path %>

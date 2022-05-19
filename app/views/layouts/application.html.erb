@@ -4,23 +4,45 @@
     <title>Soy</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <% if user_signed_in? %>
-      <%= link_to "トップ", meetings_path %>
-      <%= link_to "会議一覧", meetings_path %>
+  <header class="header">
+    <div class="wrapper">
+     <div class="logo">
+       <%= image_tag 'soy_logo.png', :size => '115x65'  %>
+     </div>
+     <div class="nav">
+      <% if user_signed_in? %>
+      <%= link_to "会議を始める", new_meeting_path %>
+      <%= link_to "アーカイブ", meetings_path %>
+      <%= link_to "フィードバック", meetings_path %>
+      <%= link_to "アカウント", user_path(current_user) %>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-    <% else %>
+     <% else %>
       <%= link_to "新規登録", new_user_registration_path %>
       <%= link_to "ログイン", new_user_session_path %>
-    <% end %>
+     <% end %>
+     </div>
+    </div>
+    </div>
+  </header>
+  
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  
     <%= yield %>
-  </body>
+  
+  <footer class="footer">
+  <p>© 2022 All Rights Reserved.</p>
+  </footer>
+
+    </body>
 </html>
+
+

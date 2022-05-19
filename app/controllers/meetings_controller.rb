@@ -8,11 +8,13 @@ class MeetingsController < ApplicationController
 
   # GET /meetings/1 or /meetings/1.json
   def show
+    @meeting = Meeting.find(params[:id])
   end
 
   # GET /meetings/new
   def new
     @meeting = Meeting.new
+
   end
 
   # GET /meetings/1/edit
@@ -22,6 +24,7 @@ class MeetingsController < ApplicationController
   # POST /meetings or /meetings.json
   def create
     @meeting = Meeting.new(meeting_params)
+    @meeting.user = current_user
 
     respond_to do |format|
       if @meeting.save
@@ -65,6 +68,7 @@ class MeetingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def meeting_params
-      params.fetch(:meeting, {})
+      params.fetch(:meeting, {}).permit(:name, :agenda, :goal, :minutes, :status, :start_meeting, :end_meeting
+      )
     end
 end

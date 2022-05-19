@@ -1,6 +1,7 @@
 <h1>Meetings</h1>
 <div id="hoge"></div>
 <div class="container">
+<div class="back-ground-logo"></div>
     <div id="timer"></div>
 
     <form id="form" class="form-inline">
@@ -13,6 +14,7 @@
   </div>
 
   <script>
+  
   (function($) {
     $.fn.timer = function(totalTime) {
       // reset timer
@@ -81,6 +83,15 @@
   <tbody>
     <% @meetings.each do |meeting| %>
       <tr>
+      <td><%= meeting.name %></td>
+      <td><%= meeting.agenda %></td>
+      <td><%= meeting.goal %></td>
+      <td><%= meeting.status %></td>
+      <td><%= meeting.start_meeting %></td>
+      <td><%= meeting.end_meeting %></td>
+
+
+
         <td><%= link_to 'Show', meeting %></td>
         <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
         <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -91,4 +102,3 @@
 
 <br>
 
-<%= link_to 'New Meeting', new_meeting_path %>

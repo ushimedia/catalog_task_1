@@ -10,14 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_11_042943) do
+ActiveRecord::Schema.define(version: 2022_05_19_011509) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "feedbacks", force: :cascade do |t|
+    t.integer "score", null: false
+    t.text "description"
+    t.bigint "user_id", null: false
+    t.bigint "meeting_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "meetings", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "name", null: false
+    t.text "agenda"
+    t.text "goal", null: false
+    t.text "minutes"
+    t.integer "status", default: 0, null: false
+    t.time "start_meeting", null: false
+    t.time "end_meeting", null: false
+    t.bigint "user_id", null: false
   end
 
   create_table "users", force: :cascade do |t|

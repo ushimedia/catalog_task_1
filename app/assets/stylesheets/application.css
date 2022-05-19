@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap";
+
+ .header {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, transparent, #6C63FF);
+  }
+
+.header .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    display: flex;
+  }
+  .header .wrapper .nav{
+    color: azure;
+    text-decoration: none;
+    display: block; /*幅と高さを持ったブロック要素*/
+    line-height: 60px; /*ヘッダーの高さと同じ60px*/
+    padding: 0 20px; /*各リスト項目の余白左右20px*/
+  }
+
+.footer {
+    width: 100%;
+    height: 40px;
+    background: #6C63FF;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+  } 
+
+.footer p{
+    color: azure;
+    text-align: center;
+  }
+
