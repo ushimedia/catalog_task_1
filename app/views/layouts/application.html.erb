@@ -12,36 +12,15 @@
   </head>
 
   <body>
-  <header class="header">
-    <div class="wrapper">
-     <div class="logo">
-       <%= image_tag 'soy_logo.png', :size => '115x65'  %>
-     </div>
-     <div class="nav">
-      <% if user_signed_in? %>
-      <%= link_to "会議を始める", new_meeting_path, class: "btn btn-outline-primary" %>
-      <%= link_to "アーカイブ", meetings_path, class: "btn btn-outline-primary" %>
-      <%= link_to "フィードバック", new_feedback_path, class: "btn btn-outline-primary" %>
-      <%= link_to "アカウント", user_path(current_user), class: "btn btn-outline-primary" %>
-      <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-outline-primary" %>
-     <% else %>
-      <%= link_to "新規登録", new_user_registration_path, class: "btn btn-outline-primary" %>
-      <%= link_to "ログイン", new_user_session_path, class: "btn btn-outline-primary" %>
-     <% end %>
-     </div>
-    </div>
-    </div>
-  </header>
-  
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  
+
+  <%= render partial: "layouts/header" %>
+<main>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
-  
-<footer class="footer">
-  <p>© 2022 All Rights Reserved.</p>
-  </footer>
-</body>
+</main>
+<%= render partial: "layouts/footer" %>
+  </body>
     
 </html>
 
