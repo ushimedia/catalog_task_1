@@ -1,33 +1,5 @@
 <h1>New Meeting</h1>
-<%= form_for(@meeting) do |f| %>
-    
-  
-    <div class="name">
-      <%= f.label :会議名 %>
-      <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
-    </div>
-
-    <div class="agenda">
-      <%= f.label :アジェンダ %>
-      <%= f.text_field :agenda, autofocus: true, autocomplete: "agenda" %>
-    </div>
-
-    <div class="goal">
-      <%= f.label :話し合いのゴール %>
-      <%= f.text_field :goal, autofocus: true, autocomplete: "goal" %>
-    </div>
-
-    <div class="start_meeting">
-    <%= f.label :開始時間 %>
-    <%= f.datetime_field :start_meeting, autofocus: true, autocomplete: "start_meeting" %>
-
-    <div class="end_meeting">
-    <%= f.label :終了時間 %>
-    <%= f.datetime_field :end_meeting, autofocus: true, autocomplete: "end_meeting" %>
-  </div>
-  
-    
-  
 
 <%= render 'form', meeting: @meeting %>
-<% end %>
+
+<%= link_to 'Back', meetings_path %>
