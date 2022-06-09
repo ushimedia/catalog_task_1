@@ -16,7 +16,7 @@ User.create(name: 'test5', email: 'test5@yahoo.co.jp', password: 'test555', pass
 5.times do |n|
     Meeting.create!(
       name: "会議#{n + 1}",
-      agenda: "①挨拶②話③締め#{n + 1}",
+      agenda: "本日のアジェンダその#{n + 1}",
       goal: "結論を出す",
       status: 0,
       user_id: 1,

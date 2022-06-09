@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2022_05_19_011509) do
     t.time "start_meeting", null: false
     t.time "end_meeting", null: false
     t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_meetings_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -56,4 +57,5 @@ ActiveRecord::Schema.define(version: 2022_05_19_011509) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "meetings", "users"
 end

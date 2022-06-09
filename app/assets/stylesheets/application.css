@@ -61,3 +61,11 @@ body {
 main {
   flex: 1;
 }
+
+.background {
+  background-image: url(images/meeting_picture_2.png);
+  padding: 50px;
+  text-align: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
