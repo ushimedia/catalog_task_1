@@ -32,8 +32,9 @@ ActiveRecord::Schema.define(version: 2022_05_19_011509) do
     t.text "goal", null: false
     t.text "minutes"
     t.integer "status", default: 0, null: false
-    t.time "start_meeting", null: false
-    t.time "end_meeting", null: false
+    t.datetime "start_meeting", null: false
+    t.datetime "end_meeting"
+    t.integer "hold_time", null: false
     t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_meetings_on_user_id"
   end

@@ -1,11 +1,10 @@
 
+<div class="container-fluid text-center">
+<h2><%= @meeting.name %> 進行中</h2>
 
-<div class="container">
-
-<p>会議名: <%= @meeting.name %></p>
 <p>アジェンダ: <%= @meeting.agenda %></p><br>
 <p>話し合いのゴール: <%= @meeting.goal %></p><br>
-
+<p>終了予定時刻: <%= @estimated.strftime("%-H時%-M分") %></p><br>
 
     <div id="timer"></div>
 
@@ -67,6 +66,8 @@
     $('#timer').timer(duration);
   });
   </script>
+  
+  <%= render 'form3', meeting: @meeting %>
 
 
-<%= link_to '会議を終了する', meetings_path %>
+</div>

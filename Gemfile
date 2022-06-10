@@ -34,6 +34,7 @@ gem 'letter_opener_web'
 gem 'devise-i18n'
 gem 'rails_admin', '~> 3.0'
 gem 'cancancan'
+gem 'cocoon'
 
 
 group :development, :test do

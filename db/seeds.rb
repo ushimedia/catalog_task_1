@@ -7,19 +7,33 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(name: 'test1', email: 'test1@yahoo.co.jp', password: 'test111', password_confirmation: 'test111', admin: true)
-User.create(name: 'test2', email: 'test2@yahoo.co.jp', password: 'test222', password_confirmation: 'test222')
-User.create(name: 'test3', email: 'test3@yahoo.co.jp', password: 'test333', password_confirmation: 'test333')
-User.create(name: 'test4', email: 'test4@yahoo.co.jp', password: 'test444', password_confirmation: 'test444')
-User.create(name: 'test5', email: 'test5@yahoo.co.jp', password: 'test555', password_confirmation: 'test555')
-
+User.create(name: '桐生一馬', email: 'test1@yahoo.co.jp', password: 'test111', password_confirmation: 'test111', admin: true)
+User.create(name: '堂島大吾', email: 'test2@yahoo.co.jp', password: 'test222', password_confirmation: 'test222')
+User.create(name: '秋山駿', email: 'test3@yahoo.co.jp', password: 'test333', password_confirmation: 'test333')
+User.create(name: '冴島大河', email: 'test4@yahoo.co.jp', password: 'test444', password_confirmation: 'test444')
+User.create(name: '真島吾朗', email: 'test5@yahoo.co.jp', password: 'test555', password_confirmation: 'test555')
+User.create(name: '西谷誉', email: 'test6@yahoo.co.jp', password: 'test666', password_confirmation: 'test666')
 5.times do |n|
     Meeting.create!(
       name: "会議#{n + 1}",
       agenda: "本日のアジェンダその#{n + 1}",
       goal: "結論を出す",
-      status: 0,
+      status: 1,
       user_id: 1,
+      hold_time: 30,
+      start_meeting: '2022-05-18 12:33:44', 
+      end_meeting: '2022-05-18 12:44:55'
+    )
+  end
+
+  5.times do |n|
+    Meeting.create!(
+      name: "会議#{n + 1}",
+      agenda: "本日のアジェンダその#{n + 1}",
+      goal: "結論を出す",
+      status: 1,
+      user_id: 2,
+      hold_time: 30,
       start_meeting: '2022-05-18 12:33:44', 
       end_meeting: '2022-05-18 12:44:55'
     )

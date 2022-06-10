@@ -1,25 +1,30 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Feedbacks</h1>
+<style>
+  .rails-default-error-page {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  .rails-default-error-page div.dialog {
+    width: 95%;
+    max-width: 33em;
+    margin: 4em auto 0;
+  }
 
-  <tbody>
-    <% @feedbacks.each do |feedback| %>
-      <tr>
-        <td><%= link_to 'Show', feedback %></td>
-        <td><%= link_to 'Edit', edit_feedback_path(feedback) %></td>
-        <td><%= link_to 'Destroy', feedback, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+</style>
 
-<br>
-
-<%= link_to 'New Feedback', new_feedback_path %>
+<body class="rails-default-error-page">
+  <div class="dialog">
+  <%= image_tag '準備中.png', :size => '170x210'  %>
+    
+    <div>
+      <h1>通行止めとなっております。</h1>
+    </div>
+    <p>現在このページは改装中のためご使用いただくことができません。</p>
+    <p>ご不便おかけしますが何卒ご理解のほどよろしくお願い申し上げます。</p>
+    <a href="https://fathomless-cove-38836.herokuapp.com/meetings">TOPに戻る</a>
+  </div>
+  </body>

@@ -18,21 +18,18 @@
 
 <div class="agenda">
   <%= form.label :アジェンダ %>
-  <%= form.text_field :agenda, autofocus: true, autocomplete: "agenda" %>
+  <%= form.text_area :agenda, autofocus: true, autocomplete: "agenda" %>
 </div>
 
 <div class="goal">
   <%= form.label :話し合いのゴール %>
-  <%= form.text_field :goal, autofocus: true, autocomplete: "goal" %>
+  <%= form.text_area :goal, autofocus: true, autocomplete: "goal" %>
 </div>
 
-<div class="start_meeting">
-<%= form.label :開始時間 %>
-<%= form.datetime_select :start_meeting, autofocus: true, autocomplete: "start_meeting" %>
-
-<div class="end_meeting">
-<%= form.label :終了時間 %>
-<%= form.datetime_select :end_meeting, autofocus: true, autocomplete: "end_meeting" %>
+<div class="hold_time">
+<%= form.label :予定時間 %>
+<%= form.number_field :hold_time, autofocus: true, autocomplete: "hold_time", step: "5" %>
+分
 </div>
 
   <div class="actions">

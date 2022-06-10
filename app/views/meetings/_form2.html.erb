@@ -1,0 +1,55 @@
+<%= form_with(model: meeting, local: true) do |form| %>
+    <% if meeting.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(meeting.errors.count, "error") %> prohibited this meeting from being saved:</h2>
+  
+        <ul>
+          <% meeting.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <div class="name">
+    <%= form.label :会議名 %>
+    <%= form.text_field :name, autofocus: true, autocomplete: "name" %>
+  </div>
+
+  <div class="agenda">
+    <%= form.label :アジェンダ %>
+    <%= form.text_field :agenda, autofocus: true, autocomplete: "agenda" %>
+  </div>
+
+  <div class="goal">
+    <%= form.label :話し合いのゴール %>
+    <%= form.text_field :goal, autofocus: true, autocomplete: "goal" %>
+  </div>
+
+  <div class="status">
+  <%= form.label :状況 %>
+  <%= form.radio_button :status, '完了' %>
+  <%= form.label :status, '完了', value: 0 %>
+
+   <%= form.radio_button :status, '議論中' %>
+   <%= form.label :status, '議論中', value: 1 %>
+
+   <%= form.radio_button :status, '保留' %>
+   <%= form.label :status, '保留', value: 2 %>
+</div>
+
+  <div class="start_meeting">
+  <%= form.label :開始時間 %>
+  <%= form.datetime_select :start_meeting, autofocus: true, autocomplete: "start_meeting" %>
+
+  <div class="end_meeting">
+  <%= form.label :終了時間 %>
+  <%= form.datetime_select :end_meeting, autofocus: true, autocomplete: "end_meeting" %>
+</div>
+
+  
+  
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  <% end %>

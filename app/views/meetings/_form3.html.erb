@@ -1,0 +1,33 @@
+<%= form_with(model: meeting, local: true) do |form| %>
+    <% if meeting.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(meeting.errors.count, "error") %> prohibited this meeting from being saved:</h2>
+  
+        <ul>
+          <% meeting.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+  
+
+  <div class="status">
+  <%= form.label :状況 %>
+  <%= form.radio_button :status, '完了' %>
+  <%= form.label :status, '完了', value: 0 %>
+
+   <%= form.radio_button :status, '議論中' %>
+   <%= form.label :status, '議論中', value: 1 %>
+
+   <%= form.radio_button :status, '保留' %>
+   <%= form.label :status, '保留', value: 2 %>
+</div>
+
+
+  
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  <% end %>

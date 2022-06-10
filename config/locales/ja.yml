@@ -7,6 +7,12 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
+    models:
+      meeting: 会議
+    attributes:
+      meeting:           
+        name: 会議名
+        goal: 会議のゴール 
   date:
     abbr_day_names:
     - 日

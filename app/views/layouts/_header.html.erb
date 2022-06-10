@@ -8,7 +8,7 @@
   <% if user_signed_in? %>
       <%= link_to "会議を始める", new_meeting_path, class: "btn" %>
       <%= link_to "アーカイブ", meetings_path, class: "btn" %>
-      <%= link_to "フィードバック", meetings_path, class: "btn" %>
+      <%= link_to "フィードバック", feedbacks_path, class: "btn" %>
       <%= link_to "アカウント", user_path(current_user), class: "btn" %>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn" %>
     <% else %>
