@@ -13,6 +13,7 @@ ja:
       meeting:           
         name: 会議名
         goal: 会議のゴール 
+        end_meeting: 会議終了時刻
   date:
     abbr_day_names:
     - 日

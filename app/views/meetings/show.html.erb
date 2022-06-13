@@ -2,71 +2,21 @@
 <div class="container-fluid text-center">
 <h2><%= @meeting.name %> 進行中</h2>
 
+<p>会議開始時刻: <%= @meeting.start_meeting.strftime("%-H時%-M分") %></p>
+<p>終了予定時刻: <%= @estimated.strftime("%-H時%-M分") %></p>
 <p>アジェンダ: <%= @meeting.agenda %></p><br>
-<p>話し合いのゴール: <%= @meeting.goal %></p><br>
-<p>終了予定時刻: <%= @estimated.strftime("%-H時%-M分") %></p><br>
 
-    <div id="timer"></div>
-
-<form id="form" class="form-inline">
-      <div class="form-group">
-        <label for="duration" class="control-label">会議の残り時間 [秒]</label>
-        <input id="duration" name="duration" type="text" value="600" class="form-control" />
-      </div>
-      <button type="submit" class="btn btn-primary">start</button>
-    </form>
-  </div>
-
-  <script>
+<div class="timer_input">
+<form name="timer">
+<input type="text" value="">分
+<input type="text" value="">秒<br>
+<input type="button" value="スタート" onclick="cntStart()">
+<input type="button" value="ストップ" onclick="cntStop()">
+</form>
+</div>
+<%= javascript_packs_with_chunks_tag 'main' %>
   
-  (function($) {
-    $.fn.timer = function(totalTime) {
-      // reset timer
-      clearTimeout(this.data('id_of_settimeout'));
-      this.empty();
-      
-      // initialize elements
-      this.append('<h4>残り時間は<span></span>秒です。</h4>');
-      this.append('<div class="progress"></div>');
-      this.children('.progress').append('<div class="progress-bar progress-bar-info"></div>');
-      this.find('.progress-bar').css({
-          cssText: '-webkit-transition: none !important; transition: none !important;',
-          width: '100%'
-      });
-  
-      var countdown = (function(timeLeft) {
-        var $progressBar = this.find('div.progress-bar');
-        var $header = this.children('h4');
-  
-        if (timeLeft <= 0) {
-          $header.empty().text('予定時刻を過ぎています!').addClass('text-danger');
-          return;
-        }
-  
-        $header.children('span').text(timeLeft);
-        var width = (timeLeft - 1) * (100/totalTime); // unit in '%'
-        $progressBar.animate({
-          width:  width + '%'
-        }, 1000, 'linear');
-  
-        var id = setTimeout((function() {
-          countdown(timeLeft - 1);
-        }), 1000);
-        this.data("id_of_settimeout", id);
-      }).bind(this);
-  
-      countdown(totalTime);
-    };
-  })(jQuery);
-  
-  $('#form').submit(function(e) {
-    e.preventDefault();
-  
-    var duration = $("#duration").val();
-    $('#timer').timer(duration);
-  });
-  </script>
-  
+  <p>話し合いのゴール: <%= @meeting.goal %></p><br>
   <%= render 'form3', meeting: @meeting %>
 
 
