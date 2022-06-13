@@ -1,10 +1,12 @@
 class MeetingsController < ApplicationController
   before_action :set_meeting, only: %i[ show edit update destroy ]
+  before_action :set_q, only: [:index, :search]
 
   # GET /meetings or /meetings.json
   def index
-    @meetings = Meeting.where(user_id: current_user.id)
-
+    
+    @meetings = @q.result
+@meetings = @meetings.where(user_id: current_user.id)
   end
 
   # GET /meetings/1 or /meetings/1.json
@@ -65,7 +67,16 @@ class MeetingsController < ApplicationController
     end
   end
 
+  def search
+    @results = @q.result
+  end
+
   private
+
+  def set_q
+    @q = Meeting.ransack(params[:q])
+  end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_meeting
       @meeting = Meeting.find(params[:id])

@@ -10,7 +10,11 @@ Rails.application.routes.draw do
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
-  resources :meetings
+  resources :meetings do
+  collection do
+    get 'search'
+  end
+end
   resources :users
   resources :feedbacks
 end
