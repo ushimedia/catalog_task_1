@@ -4,11 +4,11 @@
 
 <p>会議開始時刻: <%= @meeting.start_meeting.strftime("%-H時%-M分") %></p>
 <p>終了予定時刻: <%= @estimated.strftime("%-H時%-M分") %></p>
-<p>アジェンダ: <%= @meeting.agenda %></p><br>
+<p>アジェンダ: <%= @meeting.agenda %></p>
 
 <div class="timer_input">
 <form name="timer">
-<input type="text" value="">分
+<input type="text" value="<%= @meeting.hold_time %>">分
 <input type="text" value="">秒<br>
 <input type="button" value="スタート" onclick="cntStart()">
 <input type="button" value="ストップ" onclick="cntStop()">
@@ -17,7 +17,7 @@
 
 <script>
 
-var timer1; //タイマーを格納する変数（タイマーID）の宣言
+var timer1;
 
 
 //カウントダウン関数を1000ミリ秒毎に呼び出す関数
@@ -58,7 +58,7 @@ function tmWrite(int) {
 
     if (int <= 0) {
         reSet();
-        alert("時間です！");
+        alert("終了時間になりました！");
     }
     else {
         //残り分数はintを60で割って切り捨てる
@@ -100,6 +100,7 @@ function percentage() {
 
   
   <p>話し合いのゴール: <%= @meeting.goal %></p>
+
   <%= render 'form3', meeting: @meeting %>
 
 

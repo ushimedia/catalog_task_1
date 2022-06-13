@@ -11,12 +11,15 @@
       </div>
     <% end %>
   
-  
+    <div class="agenda">
+    <%= form.label :メモ %>
+    <%= form.text_area :minutes, autofocus: true, autocomplete: "minutes" %>
+  </div>
 
   <div class="status">
-  <%= form.label :状況 %>
+  <%= form.label :会議の結果 %>
   <%= form.radio_button :status, '完了' %>
-  <%= form.label :status, '完了', value: 0 %>
+  <%= form.label :status, '議論完了', value: 0 %>
 
    <%= form.radio_button :status, '議論中' %>
    <%= form.label :status, '議論中', value: 1 %>

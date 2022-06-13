@@ -34,7 +34,7 @@ class MeetingsController < ApplicationController
     @meeting.start_meeting = Time.current
     respond_to do |format|
       if @meeting.save
-        format.html { redirect_to meeting_url(@meeting), notice: "Meeting was successfully created." }
+        format.html { redirect_to meeting_url(@meeting), notice: "会議が正常に登録されました。" }
         format.json { render :show, status: :created, location: @meeting }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -48,7 +48,7 @@ class MeetingsController < ApplicationController
     @meeting.end_meeting = Time.current
     respond_to do |format|
       if @meeting.update(meeting_params)
-        format.html { redirect_to meetings_url(@meeting), notice: "Meeting was successfully updated." }
+        format.html { redirect_to meetings_url(@meeting), notice: "会議内容が正常に更新されました。" }
         format.json { render :show, status: :ok, location: @meeting }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -62,7 +62,7 @@ class MeetingsController < ApplicationController
     @meeting.destroy
 
     respond_to do |format|
-      format.html { redirect_to meetings_url, notice: "Meeting was successfully destroyed." }
+      format.html { redirect_to meetings_url, notice: "会議履歴が削除されました。" }
       format.json { head :no_content }
     end
   end

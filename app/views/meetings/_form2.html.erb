@@ -18,13 +18,18 @@
 
   <div class="agenda">
     <%= form.label :アジェンダ %>
-    <%= form.text_field :agenda, autofocus: true, autocomplete: "agenda" %>
+    <%= form.text_area :agenda, autofocus: true, autocomplete: "agenda" %>
   </div>
 
   <div class="goal">
     <%= form.label :話し合いのゴール %>
-    <%= form.text_field :goal, autofocus: true, autocomplete: "goal" %>
+    <%= form.text_area :goal, autofocus: true, autocomplete: "goal" %>
   </div>
+
+  <div class="agenda">
+  <%= form.label :メモ %>
+  <%= form.text_area :minutes, autofocus: true, autocomplete: "minutes" %>
+</div>
 
   <div class="status">
   <%= form.label :状況 %>

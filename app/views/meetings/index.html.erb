@@ -15,14 +15,14 @@
   <th>ゴール</th>
   <th> <%= sort_link(@q, :status, "ステータス") %></th>
   <th>メモ（議事録）</th>
-  <th>開始時間</th>
-  <th>終了時間</th>
-  <th>会議予定時間</th>
-  <th>進行中に戻る</th>
+  <th>会議開始</th>
+  <th>会議終了</th>
+  <th>予定時間</th>
+  <th>進行画面に戻る</th>
   <th>修正</th>
   <th>削除</th>
  
-    
+  
   </tr>
   </thead>
 
@@ -37,7 +37,7 @@
       <td><%= meeting.minutes %></td>
       <td><%= meeting.start_meeting.strftime("%-H時%-M分") %></td>
       <td><%= meeting&.end_meeting&.strftime("%-H時%-M分") %></td>
-      <td><%= meeting.hold_time %></td>
+      <td><%= meeting.hold_time %>分</td>
       <td><%= link_to '進行画面に戻る', meeting %></td>
       <td><%= link_to '編集', edit_meeting_path(meeting) %></td>
       <td><%= link_to '削除', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
