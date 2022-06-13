@@ -11,12 +11,14 @@
   <tr>
       
   <th>会議名</th>
-  <th>開催日</th>
+  <th> <%= sort_link(@q, :start_meeting, "開催日") %></th>
+  <th>ゴール</th>
   <th> <%= sort_link(@q, :status, "ステータス") %></th>
   <th>メモ（議事録）</th>
-  <th>フィードバック</th>
   <th>開始時間</th>
   <th>終了時間</th>
+  <th>会議予定時間</th>
+  <th>進行中に戻る</th>
   <th>修正</th>
   <th>削除</th>
  
@@ -31,12 +33,11 @@
       <td><%= meeting.name %></td>
       <td><%= meeting.start_meeting.strftime("%-m月%-d日") %></td>
       <td><%= meeting.goal %></td>
-      <td><%= meeting.minutes %></td>
       <td><%= meeting.status %></td>
+      <td><%= meeting.minutes %></td>
       <td><%= meeting.start_meeting.strftime("%-H時%-M分") %></td>
       <td><%= meeting&.end_meeting&.strftime("%-H時%-M分") %></td>
       <td><%= meeting.hold_time %></td>
-
       <td><%= link_to '進行画面に戻る', meeting %></td>
       <td><%= link_to '編集', edit_meeting_path(meeting) %></td>
       <td><%= link_to '削除', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
