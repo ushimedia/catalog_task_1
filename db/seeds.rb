@@ -21,7 +21,7 @@ User.create(name: '西谷誉', email: 'test6@yahoo.co.jp', password: 'test666', 
       status: 1,
       user_id: 1,
       hold_time: 30,
-      minutes: "スーパーセールのADマイルがYoY+20%"
+      minutes: "スーパーセールのADマイルがYoY+20%",
       start_meeting: '2022-05-18 9:40:00', 
       end_meeting: '2022-05-18 10:00:00'
     )

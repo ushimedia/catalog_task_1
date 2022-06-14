@@ -1,5 +1,11 @@
 ---
 ja:
+  views:
+    pagination:
+      next: 次のページ
+      last: 最後のページ
+      first: 最初のページ
+      previous: 前のページ
   activerecord:
     errors:
       messages:
@@ -13,6 +19,7 @@ ja:
       meeting:           
         name: 会議名
         goal: 会議のゴール 
+        hold_time: 会議の開催予定時間
         end_meeting: 会議終了時刻
   date:
     abbr_day_names:

@@ -1,6 +1,6 @@
 class Meeting < ApplicationRecord
     belongs_to :user
-    validates :name, :goal, presence: true
+    validates :name, :goal, :hold_time, presence: true
     validate :start_end_check, on: :update
     enum status: { 完了: 0, 議論中: 1, 保留: 2 }
     

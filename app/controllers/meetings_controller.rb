@@ -6,7 +6,7 @@ class MeetingsController < ApplicationController
   def index
     
     @meetings = @q.result
-@meetings = @meetings.where(user_id: current_user.id)
+    @meetings = @meetings.where(user_id: current_user.id).order(start_meeting: "DESC").page(params[:page])
   end
 
   # GET /meetings/1 or /meetings/1.json
