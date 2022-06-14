@@ -8,14 +8,16 @@
 
 <div class="timer_input">
 <form name="timer">残り
-<input type="text" value="<%= @meeting.hold_time %>">分
-<input type="text" value="" >秒<br>
+<input type="number" value="<%= @meeting.hold_time %>">分
+<input type="number" value="" >秒<br>
 <input type="button" value="スタート" onclick="cntStart()">
 <input type="button" value="ストップ" onclick="cntStop()">
 </form>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
 <script>
+
 
 var timer1;
 
@@ -50,44 +52,21 @@ function countDown() {
     }
 }
 
-//残り時間を書き出す関数
+
+//残り時間
 function tmWrite(int) {
     int = parseInt(int);
 
     if (int <= 0) {
         reSet();
-        alert("終了時間になりました！");
+        Push.create('会議の予定終了時刻になりました。');
     }
     else {
-        //残り分数はintを60で割って切り捨てる
         document.timer.elements[0].value = Math.floor(int / 60);
-        //残り秒数はintを60で割った余り
         document.timer.elements[1].value = int % 60;
     }
 }
 
-function percentage() {
-  currentTime = (sec/60 + min + hour*60 ) //カウント時間[min]を取得
-  let percent = Math.round(100 - currentTime / $("#meetingTime").html() *100);
-  $("#bar").attr("value", percent);
-  $("#time").text(percent+" %");
-  
-  if (percent > 50) {
-   
-  } else if ( percent <= 50 && percent > 30) {
-    alert("折り返しです。ゴールの着地を確認しましょう。");
-  } else if ( percent <= 30 && percent > 20) {
-    alert("70%経過しました。<br>議論の収束を図ましょう");
-  } else if ( percent <= 20 && percent > 10) {
-    alert("80%経過しました。<br>アクション項目の整理");
-  } else if ( percent <= 10 && percent > 0) {
-    alert("90%経過しました。<br>優先度、スケジュールの決定");
-  } else {
-    alert("終了時間になりました！");
-  }
-};
-
-//フォームを初期状態に戻す（リセット）関数
 function reSet() {
     document.timer.elements[0].value = "0";
     document.timer.elements[1].value = "0";
