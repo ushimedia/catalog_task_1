@@ -11,22 +11,22 @@
       </div>
     <% end %>
   
-    <div class="name">
+    <div class="label1">
     <%= form.label :会議名 %>
     <%= form.text_field :name, autofocus: true, autocomplete: "name" %>
   </div>
 
-  <div class="agenda">
+  <div class="label1">
     <%= form.label :アジェンダ %>
     <%= form.text_area :agenda, autofocus: true, autocomplete: "agenda" %>
   </div>
 
-  <div class="goal">
+  <div class="label1">
     <%= form.label :話し合いのゴール %>
     <%= form.text_area :goal, autofocus: true, autocomplete: "goal" %>
   </div>
 
-  <div class="agenda">
+  <div class="label1">
   <%= form.label :メモ %>
   <%= form.text_area :minutes, autofocus: true, autocomplete: "minutes" %>
 </div>
@@ -43,11 +43,11 @@
    <%= form.label :status, '保留', value: 2 %>
 </div>
 
-  <div class="start_meeting">
+  <div class="label1">
   <%= form.label :開始時間 %>
   <%= form.time_select :start_meeting, autofocus: true, autocomplete: "start_meeting" %>
 
-  <div class="end_meeting">
+  <div class="label1">
   <%= form.label :終了時間 %>
   <%= form.time_select :end_meeting, autofocus: true, autocomplete: "end_meeting" %>
 </div>

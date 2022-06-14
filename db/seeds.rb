@@ -13,7 +13,7 @@ User.create(name: '秋山駿', email: 'test3@yahoo.co.jp', password: 'test333', 
 User.create(name: '冴島大河', email: 'test4@yahoo.co.jp', password: 'test444', password_confirmation: 'test444')
 User.create(name: '真島吾朗', email: 'test5@yahoo.co.jp', password: 'test555', password_confirmation: 'test555')
 User.create(name: '西谷誉', email: 'test6@yahoo.co.jp', password: 'test666', password_confirmation: 'test666')
-5.times do |n|
+10.times do |n|
     Meeting.create!(
       name: "会議#{n + 1}",
       agenda: "本日のアジェンダ#{n + 1}",
@@ -22,12 +22,12 @@ User.create(name: '西谷誉', email: 'test6@yahoo.co.jp', password: 'test666', 
       user_id: 1,
       hold_time: 30,
       minutes: "スーパーセールのADマイルがYoY+20%",
-      start_meeting: '2022-05-18 9:40:00', 
-      end_meeting: '2022-05-18 10:00:00'
+      start_meeting: "2022-06-#{n + 1} 9:40:00", 
+      end_meeting: "2022-06-#{n + 1} 10:00:00"
     )
   end
 
-  5.times do |n|
+  10.times do |n|
     Meeting.create!(
       name: "会議#{n + 1}",
       agenda: "本日のアジェンダ#{n + 1}",
@@ -35,8 +35,8 @@ User.create(name: '西谷誉', email: 'test6@yahoo.co.jp', password: 'test666', 
       status: 1,
       user_id: 2,
       hold_time: 30,
-      start_meeting: '2022-05-18 9:40:00', 
-      end_meeting: '2022-05-18 10:00:00'
+      start_meeting: "2022-06-#{n + 1} 9:40:00", 
+      end_meeting: "2022-06-#{n + 1} 10:00:00"
     )
   end
 

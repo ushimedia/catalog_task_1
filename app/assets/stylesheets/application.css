@@ -67,3 +67,26 @@ main {
 .field_with_errors {
   display: contents;
 }
+
+
+#meeting_name,
+#meeting_agenda,
+#meeting_goal,
+#meeting_hold_time,
+#meeting_minutes {
+  vertical-align: middle;
+  position: relative;
+  margin: 5px;
+  width: 220px;
+}
+
+.label1 label {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+
+.timer_input input {
+  margin: 3px;
+
+}

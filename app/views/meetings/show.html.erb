@@ -9,7 +9,7 @@
 <div class="timer_input">
 <form name="timer">
 <input type="text" value="<%= @meeting.hold_time %>">分
-<input type="text" value="">秒<br>
+<input type="text" value="" >秒<br>
 <input type="button" value="スタート" onclick="cntStart()">
 <input type="button" value="ストップ" onclick="cntStop()">
 </form>
@@ -19,8 +19,6 @@
 
 var timer1;
 
-
-//カウントダウン関数を1000ミリ秒毎に呼び出す関数
 function cntStart() {
     document.timer.elements[2].disabled = true;
     timer1 = setInterval("countDown()", 1000);
@@ -68,6 +66,27 @@ function tmWrite(int) {
     }
 }
 
+function percentage() {
+  currentTime = (sec/60 + min + hour*60 ) //カウント時間[min]を取得
+  let percent = Math.round(100 - currentTime / $("#meetingTime").html() *100);
+  $("#bar").attr("value", percent);
+  $("#time").text(percent+" %");
+  
+  if (percent > 50) {
+   
+  } else if ( percent <= 50 && percent > 30) {
+    alert("折り返しです。ゴールの着地を確認しましょう。");
+  } else if ( percent <= 30 && percent > 20) {
+    alert("70%経過しました。<br>議論の収束を図ましょう");
+  } else if ( percent <= 20 && percent > 10) {
+    alert("80%経過しました。<br>アクション項目の整理");
+  } else if ( percent <= 10 && percent > 0) {
+    alert("90%経過しました。<br>優先度、スケジュールの決定");
+  } else {
+    alert("終了時間になりました！");
+  }
+};
+
 //フォームを初期状態に戻す（リセット）関数
 function reSet() {
     document.timer.elements[0].value = "0";
@@ -76,26 +95,6 @@ function reSet() {
     clearInterval(timer1);
 }
 
-function percentage() {
-  currentTime = (sec/60 + min + hour*60 ) //カウント時間[min]を取得
-  let percent = Math.round(100 - currentTime / $("#meetingTime").html() *100);
-  $("#bar").attr("value", percent);
-  $("#time").text(percent+" %");
-  
-  if (percent > 50) {
-    $("#message").html("ミーティング開始！<br>Agenda、ゴールの共有");
-  } else if ( percent <= 50 && percent > 30) {
-    $("#message").html("半分経過しました。<br>ゴールの再確認");
-  } else if ( percent <= 30 && percent > 20) {
-    $("#message").html("70%経過しました。<br>議論の収束を図ましょう");
-  } else if ( percent <= 20 && percent > 10) {
-    $("#message").html("80%経過しました。<br>アクション項目の整理");
-  } else if ( percent <= 10 && percent > 0) {
-    $("#message").html("90%経過しました。<br>優先度、スケジュールの決定");
-  } else {
-    $("#message").html("タイムアップ！！<br>AI作成者を決めましょう<br>お疲れ様でした");
-  }
-};
 </script>
 
   
